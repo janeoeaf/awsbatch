@@ -6,6 +6,7 @@ import os
 #---provide the aws credentials or create env variables
 #os.environ["ACCESS_KEY"]="??"
 #os.environ["SECRET_KEY"]="??"
+bucket="aws-batch-example3"
 
 
 #--- create input data frame
@@ -26,7 +27,6 @@ df=pd.DataFrame.from_dict(di)
 
 
 
-bucket="batch-example"
 
 client=boto3.client('s3')
 
